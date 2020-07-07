@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Имя Фамилия - Мое Портфолио</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+.section-footer-wrapper-container {
+            display: flex;
+            width: 800px;
+            height: 50%;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+}
+    .section-footer-wrapper__title {
+        width: 300px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h2 {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+    }
+        .pictures {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 400px;
+            height: 40px;
+        }  
+        .first {
+            background: url('.//img/vk.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 50px;
+            width: 50px;
+         }
+         .second {
+            background: url('.//img//wa.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            height: 50px;
+            width: 50px;
+        } 
+        .third {
+            background: url('.//img/fb.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            height: 50px;
+            width: 50px;
+    }
+    .section-footer-wrapper__copyright {
+       width: 100%;
+       height: 20%;
+    }
+    .section-footer-wrapper__copyright > h6 {
+        position: absolute;
+        top: 325%;
+        left: 35%;
+        color: white;
+    }
+@media (max-width: 360px) {
+    .section-footer-wrapper__title > h2 {
+        font-size: 21px;
+        position: absolute;
+        right: 60%;
+    }
+    .section-footer {
+        position: absolute;
+        top: 400%;
+    }
+}
+@media (max-width: 360px) {
+    .pictures {
+        position: absolute;
+        right: 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 170px;
+        height: 25px;
+    }
+    .first {
+        width: 20px;
+        height: 20px;
+    }
+    .second {
+        width: 20px;
+        height: 20px;
+    }
+    .third {
+        width: 20px;
+        height: 20px;
+    }
+    .section-footer-wrapper__copyright > h6 {
+        position: absolute;
+        top: 80%;
+        left: 0;
+        height: 10px;
+        width: 100%;
+    }
+    h6 {
+        font-size: 12px;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav class="section-navbar">
+        <div class="section-navbar-wrapper">
+            <div class="section-navbar-wrapper__logo">
+                <a href="about.html">Oбо мне</a>
+            </div>
+            <div class="links">
+                <div class="links__link">
+                    <a href="#header">Главная</a>
+                </div>
+                <div class="links__link">
+                    <a href="#ability">Навыки</a>
+                </div>
+                <div class="links__link">
+                    <a href="#work">Работы</a>
+                </div>
+                <div class="links__link">
+                    <a href="#footer">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="section-header" id="header">
+        <div class="section-header-wrapper">
+            <div class="herobox">
+                <div class="herobox-title">
+                    <h2>
+                        Здравствуйте,
+                    </h2>
+                    <h1>
+                        Я Абросимов Лев
+                    </h1>
+                </div>
+                <div class="herobox__subtitle">
+                    <h2>
+                        front-end разработчик, создам лучший сайт для вас
+                    </h2>
+                </div>
+                <div class="herobox__calltoaction">
+                    <button>Узнать больше</button>
+                </div>
+            </div>
+            <div class="section-header-wrapper__image"></div>
+        </div>
+    </header>
+    
+    <section class="section-ability" id="ability">
+        <div class="section-ability-wrapper">
+            <div class="section-ability-wrapper-title">
+                <h3>Мои навыки</h3>
+            </div>
+                <div class="circle-bar">
+                    <div class="icon">
+                        <h5>HTML</h5>
+                    </div>
+                    <div class="icon">
+                        <h5>CSS</h5>
+                    </div>
+                    <div class="icon">
+                        <h5>JS</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-examples" id="work">
+        <div class="section-examples-wrapper">
+            <div class="section-examples-wrapper-title">
+                <h3>Мои Работы</h3>
+            </div>
+            <div class="section-examples-wrapper-cards">
+                <div class="card">
+                    <div class="card__image">
+                        <div class="card__image-2"></div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-footer__title">
+                            <h5> 
+                                <a href="#">
+                                    www.someurl.ru
+                                </a>
+                            </h5>
+                        </div>
+                        <div class="card-footer__subtitle">
+                            <p>Сайт разработан в 2020 году для собственного пользования</p>
+                        </div>
+                        <div class="almost-all-cards">
+                            <div class="card__image-3"></div>
+                            <div class="card__image-4"></div>
+                            <div class="card__image-5"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <div class="card__image-2"></div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-footer__title">
+                            <h5> 
+                                <a href="#">
+                                    www.someurl.ru
+                                </a>
+                            </h5>
+                        </div>
+                        <div class="card-footer__subtitle">
+                            <p>Сайт разработан в 2020 году для собственного пользования</p>
+                        </div>
+                        <div class="almost-all-cards">
+                            <div class="card__image-3"></div>
+                            <div class="card__image-4"></div>
+                            <div class="card__image-5"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <div class="card__image-2"></div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-footer__title">
+                            <h5> 
+                                <a href="#">
+                                    www.someurl.ru
+                                </a>
+                            </h5>
+                        </div>
+                        <div class="card-footer__subtitle">
+                            <p>Сайт разработан в 2020 году для собственного пользования</p>
+                        </div>
+                        <div class="almost-all-cards">
+                        <div class="card__image-3"></div>
+                        <div class="card__image-4"></div>
+                        <div class="card__image-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer class="section-footer" id="footer">
+        <div class="section-footer-wrapper">
+            <div class="section-footer-wrapper-container">
+            <div class="section-footer-wrapper__title">
+                <h2>Я в соцсетях:</h2>
+            </div>
+            <div class="pictures">
+                    <a href="#" class="first"></a>
+                    <a href="#" class="second"></a>
+                    <a href="#" class="third"></a>
+            </div>
+        </div>
+            <div class="section-footer-wrapper__copyright">
+                <h6>Все права защищены ©2020 | Сайт сделал Лев Абросимов</h6>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,174 @@
+.section-examples {
+    height: 200vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-wrapper {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    &-title {
+        font-size: 40px;
+        font-family: $arial;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 7em;
+
+    .card {
+        display: flex;
+        height: 400px;
+        width: 360px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 5px #95989A solid;
+
+    &__image {
+        background: url(../img/black.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 200px;
+        width: 360px;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    &__image-2 {
+        background: url(../img/design.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 150px;
+        height: 3px;
+    }    
+    &-2 {
+        background: url(../img/design.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        z-index: 10;
+        height: 28px;
+        width: 212px;
+        font-size: 25px;
+    }
+        }
+        &-footer {
+            height: 200px;
+            width: 360px;
+
+        &__title {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 280px;
+            height: 28px;
+        
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 25px;
+                    font-family: $arial;
+            }
+          }
+          .card-footer__subtitle {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 120px;
+              width: 360px;
+              
+            p {
+                font-family: $mistral;
+                font-size: 20px;
+            }
+          }
+          .almost-all-cards {
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+              height: 52px;
+              width: 360px;
+
+            .card__image-3 {
+                background: url(../img/likes.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                height: 16px;
+                width: 49px;
+            }
+            .card__image-4 {
+                background: url(../img/comments.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                height: 16px;
+                width: 49px;
+            }
+         
+          .card__image-5 {
+            background: url(../img/share.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            height: 16px;
+            width: 49px;
+          }
+        }
+      }
+    }
+  }
+}
+}
+
+.card:nth-child(1) {
+    @include media('<=phone') {
+        position: absolute;
+        top: 220%;
+        left: 0;
+        right: 5%;
+    }
+}
+.card:nth-child(2) {
+    @include media('<=phone') {
+        position: absolute;
+        top: 280%;
+        left: 0;
+    }
+}
+.card:nth-child(3) {
+    @include media('<=phone') {
+        position: absolute;
+        top: 340%;
+        left: 0;
+    }
+}
+.section-examples-wrapper-title {
+    @include media('<=phone') {
+        position: absolute;
+        top: 200%;
+        left: 15%;
+    }
+}
+.section-cards {
+    @include media('<=phone') {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

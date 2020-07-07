@@ -1,0 +1,39 @@
+@import './reset';
+@import './colors';
+@import './breakpoints';
+@import './text_setup';
+@import './navbar';
+@import './section-header';
+@import './section-ability';
+@import './section-examples';
+@import './section-footer';
+
+.section-navbar-wrapper, header, footer > .section-footer-wrapper, section {
+    max-width: 1360px;
+    margin: auto;
+}
+.herobox__calltoaction {
+    @include media('<=phone') {
+        position: absolute;
+        top: 50%;
+        left: 45%;
+
+    }
+    button {
+        @include media('<=phone') {
+            height: 80px;
+            width: 180px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+.section-examples-wpapper {
+    @include media('<=phone') {
+        height: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}

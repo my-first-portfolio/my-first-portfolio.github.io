@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            height: 100vh;
+        }
+        .section-navbar {
+    width: 100%;
+    background-color: #111E43;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.section-navbar-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px;
+}
+.section-navbar-wrapper__logo > a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0 0 0 2em;
+}
+.main-cont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 50%;
+    padding: 5em;
+}
+.text > h1 {
+    color: #071A52;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    position: absolute;
+    right: 89%;
+    top: 26%;
+}
+.text > p {
+    font-size: 25px;
+    font-family:'Mistral', sans-serif;
+    color: black;
+}
+.image {
+    background: url(".//blog/blog.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 60%;
+    width: 60%;
+}
+@media (max-width: 360px) {
+    .image {
+        position: absolute;
+        top: 5%;
+        left: 43%;
+        height: 200px;
+        width: 200px;
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+    }
+    .text > h1 {
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        height: 20px;
+        width: 100px;
+        position: absolute;
+        left: 5%;
+    }
+    .text > p {
+        height: 100%;
+        width: 100%;
+        font-size: 18px;
+        position: absolute;
+        top: 30%;
+        left: 5%;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav class="section-navbar">
+        <div class="section-navbar-wrapper">
+            <div class="section-navbar-wrapper__logo">       
+                    <a href="index.html">На главную</a>
+        </div>
+    </nav>
+        <div class="main-cont">
+            <div class="text">
+                <h1>Обо мне</h1>
+                <p>Здравствуйте меня зовут Лев и я WEB-дизайнер. 
+                    Я занимаюсь этим с 11 лет.
+                    Я знаю такие языки для web-разработки как: HTML, SCC, JavaScript.
+                    Ещё я хочу изучить язык программирования - PYTHON. 
+                    Благодаря ему я смогу заниматься back- end разработкой. С помощью back-end можно заниматься серверной частью сайтов.</p>
+            </div>
+            <div class="image"></div>
+        </div>
+</body>
+</html>
