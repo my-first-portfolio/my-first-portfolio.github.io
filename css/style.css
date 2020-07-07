@@ -490,12 +490,19 @@ body .section-header-wrapper .herobox .herobox-title h2 {
   font-family: "mistral", sans-serif;
   font-size: 25px;
   color: #71DDE2;
+  position: absolute;
+  top: 34%;
+  left: 8%;
 }
 
 body .section-header-wrapper .herobox .herobox-title h1 {
   font-family: "Arial", sans-serif;
   font-size: 40px;
   color: #111E43;
+  position: absolute;
+  left: 8%;
+  top: 36%;
+  padding-top: 10px;
 }
 
 @media (max-width: 360px) {
@@ -535,9 +542,12 @@ body .section-header-wrapper .herobox .herobox-title h1 {
 }
 
 body .section-header-wrapper .herobox .herobox__subtitle h2 {
-  font-size: 35px;
+  font-size: 37px;
   font-family: "mistral", sans-serif;
   color: #71DDE2;
+  width: 50%;
+  height: 70%;
+  padding-top: 10px;
 }
 
 @media (max-width: 768px) {
@@ -566,6 +576,9 @@ body .section-header-wrapper .herobox__calltoaction button {
   border: #1EB519 5px solid;
   margin: 1em 4em 0 0;
   padding: 20px;
+  position: absolute;
+  top: 60%;
+  left: 8%;
 }
 
 @media (max-width: 768px) {
@@ -1165,7 +1178,7 @@ body .section-header .section-header-wrapper__image {
 @media (max-width: 360px) {
   .herobox__calltoaction button {
     height: 80px;
-    width: 180px;
+    width: 250px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1175,6 +1188,9 @@ body .section-header .section-header-wrapper__image {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    position: absolute;
+    top: 40%;
+    left: 10%;
   }
 }
 

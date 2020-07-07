@@ -25,11 +25,18 @@ body {
                 font-family: $mistral;
                 font-size: 25px;
                 color: $very-blue;
+                position: absolute;
+                top: 34%;
+                left: 8%;
             }
             h1 {
                 font-family: $arial;
                 font-size: 40px;
                 color: $dark-color;
+                position: absolute;
+                left: 8%;
+                top: 36%;
+                padding-top: 10px;
                 }
             }
             .herobox-title {
@@ -66,11 +73,13 @@ body {
             }
         .herobox__subtitle {
             h2 {
-                font-size: 35px;
+                font-size: 37px;
                 font-family: $mistral;
                 // margin: 0 0 0 4em;
                 color:  $very-blue;
-
+                width: 50%;
+                height: 70%;
+                padding-top: 10px;
 
 
                 @include media('<=tablet') {
@@ -98,6 +107,9 @@ body {
                 border: $green 5px solid;
                 margin: 1em 4em 0 0 ;
                 padding: 20px;
+                position: absolute;
+                top: 60%;
+                left: 8%;
 
                 @include media('<=tablet') {
                     position: absolute;

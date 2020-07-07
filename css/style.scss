@@ -22,10 +22,13 @@
     button {
         @include media('<=phone') {
             height: 80px;
-            width: 180px;
+            width: 250px;
             display: flex;
             justify-content: center;
             align-items: center;
+            position: absolute;
+            top: 40%;
+            left: 10%;
         }
     }
 }
