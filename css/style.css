@@ -981,6 +981,15 @@ body .section-header-wrapper .section-header-wrapper__image {
           align-items: center;
 }
 
+@media (max-width: 1920px) {
+  .section-examples {
+    height: 80vh;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+
 .section-examples-wrapper {
   height: 100vh;
   width: 100%;
@@ -992,6 +1001,15 @@ body .section-header-wrapper .section-header-wrapper__image {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+}
+
+@media (max-width: 1920px) {
+  .section-examples-wrapper {
+    height: 80vh;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
 }
 
 .section-examples-wrapper-title {
