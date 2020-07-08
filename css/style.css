@@ -385,7 +385,7 @@ a {
 }
 
 .section-navbar {
-  width: 100vw;
+  width: 95%;
   background-color: #111E43;
   position: fixed;
   top: 0;
@@ -452,7 +452,6 @@ a {
 }
 
 body {
-  overflow-x: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -703,6 +702,13 @@ body .section-header-wrapper .section-header-wrapper__image {
           align-items: center;
 }
 
+@media (max-width: 1920px) {
+  .section-ability {
+    height: 50vh;
+    width: 100%;
+  }
+}
+
 .section-ability-wrapper {
   height: 90vh;
   width: 100%;
@@ -714,6 +720,13 @@ body .section-header-wrapper .section-header-wrapper__image {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+}
+
+@media (max-width: 1920px) {
+  .section-ability-wrapper {
+    height: 50vh;
+    width: 100%;
+  }
 }
 
 .section-ability-wrapper-title {
@@ -1395,6 +1408,73 @@ body .section-header-wrapper .section-header-wrapper__image {
   width: 212px;
   height: 28px;
   z-index: 10;
+}
+
+.section-navbar {
+  width: 100vw;
+  background-color: #111E43;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.section-navbar-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 14px;
+}
+
+@media (max-width: 420px) {
+  .section-navbar-wrapper__logo {
+    margin: 0 0 0 30px;
+  }
+}
+
+.section-navbar-wrapper__logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 0;
+}
+
+.section-navbar-wrapper .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 420px) {
+  .section-navbar-wrapper .links__link {
+    display: none;
+  }
+}
+
+.section-navbar-wrapper .links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .section-navbar-wrapper__logo {
+    font-size: 20px;
+    padding-top: 31;
+  }
 }
 
 .links {
