@@ -1,5 +1,5 @@
 .section-ability {
-    height: 90vh;
+    height: 70vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -19,15 +19,24 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 2em;
     }
-  }
+
 .circle-bar {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding: 3em;
+  padding: 7em;
+
+  @include media('<=phone') {
+    display: flex;
+    flex-direction: column;
+    height: 200%;
+    width: 80%;
+    justify-content: flex-start;
+    align-items: center;
+
+  }
 }
 .circle-bar > .icon{
 display: flex;
@@ -38,7 +47,7 @@ position: relative;
 width: 200px;
 height: 200px;
 background-color: #17B978;
-margin: 0 62.5px;
+
 
 
 
@@ -109,57 +118,49 @@ z-index: 2;
       flex-direction: column;
       height: 100vh;
       width: 100%;
-      justify-content: center;
-      align-items: center;
+
     }
   }
-  .progress-bar {
+  .icon:nth-child(1) {
+    @include media('<=phone') {
+      display: flex;
+      margin-right: 3em;
+      margin-bottom: 20px;
+    }
+  }
+  .icon:nth-child(2) {
+    @include media('<=phone') {
+      display: flex;
+      margin-right: 3em;
+      margin-bottom: 20px;
+    }
+  }
+  .icon:nth-child(3) {
+    @include media('<=phone') {
+      display: flex;
+      margin-right: 3em;
+    }
+  }
+.section-ability-wrapper-title {
   @include media('<=phone') {
     display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
-  @include media('<=tablet') {
-      width: 768px;
-      height: 100%;
-  }
-}
-.icon:nth-child(1) {
-  @include media('<=phone') {
-   position: absolute;
-   top: -70%;
-   left: 34%;
-  }
-}
-.icon:nth-child(2) {
-  @include media('<=phone') {
-   position: absolute;
-   top: 50%;
-   left: 0%;
-  }
-}
-.icon:nth-child(3) {
-  @include media('<=phone') {
-   position: absolute;
-   top: 170%;
-   right: 34%;
-   margin: 0 0 2em 0;
-  }
-}
-.section-ability-wrapper-title {
       h3 {
         @include media('<=phone') {
-          position: absolute;
-          top: 10%;
-          left: 20%;
           font-size: 40px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          margin-top: 60px;
       }
-      @include media('<=tablet') {
-        position: absolute;
-        top: 95%;
-      }
+      // @include media('<=tablet') {
+      //   position: absolute;
+      //   top: 95%;
+      // }
     } 
+}
 }
 .section-ability-wrapper {
   @include media('<=tablet') {

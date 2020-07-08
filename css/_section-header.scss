@@ -1,5 +1,19 @@
 body {
-    overflow-x: hidden;
+    // overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+
+    @include media('<=phone') {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
 
 .section-header {
     height: 100vh;
@@ -17,86 +31,74 @@ body {
             flex-direction: column;
             height: 384px;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             width: 672px;
+            margin-left: 20px;
 
             .herobox-title {
             h2 {
                 font-family: $mistral;
                 font-size: 25px;
                 color: $very-blue;
-                position: absolute;
-                top: 34%;
-                left: 8%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
             }
             h1 {
                 font-family: $arial;
                 font-size: 40px;
                 color: $dark-color;
-                position: absolute;
-                left: 8%;
-                top: 36%;
                 padding-top: 10px;
                 }
             }
-            .herobox-title {
-                h2 {
+            .herobox-title { 
                 @include media('<=phone') {
-                    position: absolute;
-                    top: 20%;
-                    left: 0;
-                    }
+                    width: 50%;
+                    height: 105%;
 
-                    @include media('<=tablet') {
-                        position: absolute;
-                        top: 25%;
-                        right: 83%;
+                    h2  {
+                        @include media('<=phone') {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    margin-left: 50px;
                     }
                 }
-                h1 {
-                    @include media('<=phone') {
-                        position: absolute;
-                        top: 23%;
-                        left: 0;
-                        font-size: 30px;
-                        width: 100%;
+                    h1 {
+                        @include media('<=phone') {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            font-size: 27px;
+                            width: 100vw;
+                            padding-top: 25px;
+                            margin-left: 45px;
+                        }    
                     }
-                        @include media('<=tablet') {
-                            position: absolute;
-                            top: 28%;
-                            right: 67%;
-                            font-size: 30px;
-                            padding-top: 9px;
-                        }
-                        
                 }
             }
         .herobox__subtitle {
             h2 {
                 font-size: 37px;
                 font-family: $mistral;
-                // margin: 0 0 0 4em;
                 color:  $very-blue;
                 width: 50%;
-                height: 70%;
+                height: 30%;
                 padding-top: 10px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
 
-
-                @include media('<=tablet') {
-                    top: 39%;
-                    position: absolute;
-                    left: 5%;
-                    
                     @include media('<=phone') {
-                        margin-right: 0;
-                        position: absolute;
-                        left: 0;
-                        top: 33%;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: flex-start;
+                        margin-left: 50px;
                     }
-            }
-        }       
-    }
-}
+                }
+            }       
+        }
         .herobox__calltoaction {
             button {
                 background-color: $green;
@@ -107,41 +109,50 @@ body {
                 border: $green 5px solid;
                 margin: 1em 4em 0 0 ;
                 padding: 20px;
-                position: absolute;
-                top: 60%;
-                left: 8%;
 
                 @include media('<=tablet') {
-                    position: absolute;
-                    top: 50%;
-                    left: 0;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-start;
+                    margin-left: 30px;
                 }
             }
         }
-}
-    .section-header-wrapper__image {
-        width: 52%;
-        height: 60%;
-        background: url('../img/5834.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-    .section-header-wrapper__image {
 
-            @include media('<=tablet') {
-                position: absolute;
-                top: 20%;
-                left: 44%;
-                width: 440px;
-                height: 440px;
-            }
+        .section-header-wrapper__image {
+            width: 400px;
+            height: 400px;
+            background: url('../img/5834.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+    
             @include media('<=phone') {
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-start;
+                height: 120px;
+                width: 120px;
+                background: url('../img/5834.png');
+                background-repeat: no-repeat;
+                background-size: contain;
                 position: absolute;
-                top: 8%;
-                left: 57%;
-                height: 150px;
-                width: 150px;
+                bottom: 74%;
+                right: 0;
                 }
+            
+            //     @include media('<=tablet') {
+            //         width: 440px;
+            //         height: 440px;
+            //     }
+        }
+    }
+}
+   
+@include media('<=LGdesktop') {
+    .herobox__subtitle {
+        h2 {
+            margin-top: 16px;
+            }
         }
     }
 }

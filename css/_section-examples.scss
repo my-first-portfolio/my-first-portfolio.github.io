@@ -27,6 +27,13 @@
         align-items: center;
         padding: 7em;
 
+            @include media('<=phone') {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                padding: 7em;
+            }
     .card {
         display: flex;
         height: 400px;
@@ -34,19 +41,40 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 5px #95989A solid;
+        
+            @include media('<=phone') {
+                display: flex;
+                height: 400px;
+                width: 268px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
 
     &__image {
         background: url(../img/black.png);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: contain;
-        height: 200px;
+        background-size: cover;
+        height: 400px;
         width: 360px;
         z-index: 2;
         display: flex;
         justify-content: center;
         align-items: center;
+        
+        @include media('<=phone') {
+            background: url(../img/black.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 200px;
+            width: 270px;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
     &__image-2 {
         background: url(../img/design.png);
@@ -68,20 +96,39 @@
         }
         &-footer {
             height: 200px;
-            width: 360px;
+            width: 350px;
+            border: 5px #95989A solid;
+
+            @include media('<=phone') {
+                height: 200px;
+                width: 263px;
+                border: 1px #95989A solid;
+            }
 
         &__title {
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            width: 280px;
+            width: 270px;
             height: 28px;
         
+            @include media('<=phone') {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 360px;
+                height: 28px;
+            }
                 a {
                     text-decoration: none;
                     color: black;
-                    font-size: 25px;
+                    font-size: 27px;                 
                     font-family: $arial;
+
+                    @include media('<=phone') {
+                        font-size: 22px;
+                        margin-left: 40px;
+                    }
             }
           }
           .card-footer__subtitle {
@@ -89,11 +136,21 @@
               justify-content: center;
               align-items: center;
               height: 120px;
-              width: 360px;
               
+              @include media('<=phone') {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 120px;
+              }
             p {
                 font-family: $mistral;
-                font-size: 20px;
+                font-size: 21px;
+                margin-left: 15px;
+
+                @include media('<=phone') {
+                    font-size: 17px;
+                }
             }
           }
           .almost-all-cards {
@@ -102,6 +159,14 @@
               align-items: center;
               height: 52px;
               width: 360px;
+
+              @include media('<=phone') {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                height: 52px;
+                width: 263px;
+              }
 
             .card__image-3 {
                 background: url(../img/likes.png);
@@ -137,31 +202,17 @@
 
 .card:nth-child(1) {
     @include media('<=phone') {
-        position: absolute;
-        top: 220%;
-        left: 0;
-        right: 5%;
+        margin-top: -30px;
     }
 }
 .card:nth-child(2) {
     @include media('<=phone') {
-        position: absolute;
-        top: 280%;
-        left: 0;
+        margin-top: 20px;
     }
 }
 .card:nth-child(3) {
     @include media('<=phone') {
-        position: absolute;
-        top: 340%;
-        left: 0;
-    }
-}
-.section-examples-wrapper-title {
-    @include media('<=phone') {
-        position: absolute;
-        top: 200%;
-        left: 15%;
+        margin-top: 10px;
     }
 }
 .section-cards {
