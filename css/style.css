@@ -1394,4 +1394,22 @@ body .section-header-wrapper .section-header-wrapper__image {
   height: 28px;
   z-index: 10;
 }
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 420px) {
+  .links__link {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
