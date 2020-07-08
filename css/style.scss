@@ -46,7 +46,7 @@
     align-items: center;
     
     &__link {
-        @include media('<=phone') {
+        @include media('<=420') {
             display: none;
         }
     }
