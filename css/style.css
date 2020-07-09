@@ -1445,18 +1445,18 @@ body {
   font-size: 40px;
 }
 
-@media (max-width: 420px) {
-  .section-footer-wrapper-container h2 {
-    font-size: 18px;
-    position: absolute;
-    right: 60%;
-  }
-}
-
 @media (max-width: 768px) {
   .section-footer-wrapper-container h2 {
     font-size: 30px;
     margin-right: 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  .section-footer-wrapper-container h2 {
+    font-size: 22px;
+    position: absolute;
+    right: 60%;
   }
 }
 
