@@ -650,7 +650,7 @@ body .section-header-wrapper .herobox__calltoaction button {
 body .section-header-wrapper .section-header-wrapper__image {
   width: 550px;
   height: 550px;
-  background: url("../img/books_and_people.png");
+  background: url("../img/books.png");
   background-repeat: no-repeat;
   background-size: contain;
   margin-top: 70px;
@@ -669,7 +669,7 @@ body .section-header-wrapper .section-header-wrapper__image {
             align-items: flex-start;
     height: 120px;
     width: 120px;
-    background: url("../img/books_and_people.png");
+    background: url("../img/books.png");
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
