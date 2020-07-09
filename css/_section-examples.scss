@@ -24,7 +24,8 @@
             align-items: center;
 
             @include media('<=phone') {
-                margin-top: 20px;
+                margin-top: -80px;
+                margin-right: 20px;
             }
         }
             &-cards {
@@ -194,17 +195,20 @@
 // НАЧАЛО SASS КОДА ДЛЯ МОБИЛ
 .card:nth-child(1) {
     @include media('<=phone') {
-        margin-top: 40px;
+        margin-top: -40px;
+        margin-left: -25px;
     }
 }
 .card:nth-child(2) {
     @include media('<=phone') {
-        margin-top: 30px;
+        margin-top: 1px;
+        margin-left: -25px;
     }
 }
 .card:nth-child(3) {
     @include media('<=phone') {
-        margin-top: 20px;
+        margin-top:25px;
+        margin-left: -25px;
     }
 }
 
