@@ -45,6 +45,10 @@ body {
           align-items: center;
           padding: 3em;
 
+          @include media('<=LGdesktop') {
+            margin-top: 150px;
+        }
+
           @include media('<=phone') {
             display: flex;
             flex-direction: column;

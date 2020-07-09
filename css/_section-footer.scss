@@ -1,5 +1,5 @@
 .section-footer {
-    height: 20vh;
+    height: 40vh;
     width: 100%;
     background-color: $sea-color;
     display: flex;
@@ -8,11 +8,12 @@
     align-items: center;
     position: absolute;
     bottom: -300%;
-    left: 10%;
+    // left: 10%;
     
 
     &-wrapper {
         display: flex;
+        width: 100vw;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -24,6 +25,7 @@
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
+            height: 100%;
             
         
             .section-footer-wrapper__title {
@@ -101,6 +103,10 @@
             &__copyright {
             width: 100%;
             height: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
 
             h6 {
                 color: white;
