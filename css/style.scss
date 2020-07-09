@@ -1,18 +1,16 @@
 @import './reset';
 @import './colors';
-@import './text_setup';
 @import './breakpoints';
+@import './text_setup';
 @import './navbar';
 @import './section-header';
 @import './section-ability';
 @import './section-examples';
 @import './section-footer';
 
-html {
-    overflow-x: hidden;
-}
 
 .section-navbar-wrapper, header, footer > .section-footer-wrapper, section {
     max-width: 1360px;
     margin: auto;
 }
+
