@@ -73,6 +73,10 @@ body {
             height: 200px;
             width: 200px;
             }
+            @include media('<=tablet') {
+              height: 150px;
+            width: 150px;
+            }
         }
             .icon::before {              
               content: '';
@@ -89,6 +93,10 @@ body {
               @include media('<=phone') {
                 height: 150px;
                 width: 150px;
+                }
+                @include media('<=tablet') {
+                  height: 100px;
+                width: 100px;
                 }
             }
 
@@ -107,6 +115,10 @@ body {
                   @include media('<=phone') {
                     height: 200px;
                     width: 200px;
+                    }
+                    @include media('<=tablet') {
+                      height: 150px;
+                    width: 150px;
                     }
               }
                   h5 {

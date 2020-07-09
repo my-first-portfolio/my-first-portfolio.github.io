@@ -43,6 +43,10 @@
                             position: absolute;
                             right: 60%;
                     }
+                    @include media('<=tablet') {
+                        font-size: 30px;
+                        margin-right: 12px;
+                      }
                 }
                     .pictures {
                         display: flex;
@@ -71,6 +75,10 @@
                                 width: 20px;
                                 height: 20px;
                             }
+                            @include media('<=tablet') {
+                                width: 35px;
+                                height: 35px;
+                              }
                          }
                          .second {
                             background: url('../img/wa.png');
@@ -84,6 +92,10 @@
                                 width: 20px;
                                 height: 20px;
                             }
+                            @include media('<=tablet') {
+                                width: 35px;
+                                height: 35px;
+                              }
                         } 
                         .third {
                             background: url('../img/fb.png');
@@ -97,26 +109,31 @@
                                 width: 20px;
                                 height: 20px;
                             }
+                            @include media('<=tablet') {
+                                width: 35px;
+                                height: 35px;
+                              }
+                        }
                     }
-                }
-            }          
-            &__copyright {
-            width: 100%;
-            height: 20%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 30px;
+                }          
+                &__copyright {
+                width: 100%;
+                height: 20%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 30px;
 
-            h6 {
-                color: white;
+                h6 {
+                    color: white;
 
-                @include media('<=phone') {
-                    height: 10px;
-                    width: 100%;
-                    font-size: 12px;
+                    @include media('<=phone') {
+                        height: 10px;
+                        width: 100%;
+                        font-size: 12px;
+                    }
+                    
                 }
             }
         }
     }
-}
