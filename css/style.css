@@ -1019,7 +1019,7 @@ body {
 
 @media (max-width: 1366px) {
   .section-examples-wrapper-title {
-    margin-top: -130px;
+    margin-top: -170px;
     margin-right: 20px;
   }
 }
@@ -1370,7 +1370,7 @@ body {
 
 @media (max-width: 1366px) {
   .card:nth-child(1) {
-    margin-top: -30px;
+    margin-top: -40px;
   }
 }
 
@@ -1390,7 +1390,7 @@ body {
 
 @media (max-width: 1366px) {
   .card:nth-child(2) {
-    margin-top: 15px;
+    margin-top: 30px;
   }
 }
 
@@ -1410,7 +1410,7 @@ body {
 
 @media (max-width: 1366px) {
   .card:nth-child(3) {
-    margin-top: 15px;
+    margin-top: 50px;
   }
 }
 
