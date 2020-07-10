@@ -1017,6 +1017,13 @@ body {
   }
 }
 
+@media (max-width: 1366px) {
+  .section-examples-wrapper-title {
+    margin-top: -130px;
+    margin-right: 20px;
+  }
+}
+
 .section-examples-wrapper-cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1052,6 +1059,24 @@ body {
 }
 
 @media (max-width: 768px) {
+  .section-examples-wrapper-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 3em;
+  }
+}
+
+@media (max-width: 1366px) {
   .section-examples-wrapper-cards {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1343,6 +1368,12 @@ body {
   }
 }
 
+@media (max-width: 1366px) {
+  .card:nth-child(1) {
+    margin-top: -30px;
+  }
+}
+
 @media (max-width: 420px) {
   .card:nth-child(2) {
     margin-top: 1px;
@@ -1353,6 +1384,12 @@ body {
 @media (max-width: 768px) {
   .card:nth-child(2) {
     margin-left: -25px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .card:nth-child(2) {
     margin-top: 15px;
   }
 }
@@ -1368,6 +1405,12 @@ body {
   .card:nth-child(3) {
     margin-top: 15px;
     margin-left: -25px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .card:nth-child(3) {
+    margin-top: 15px;
   }
 }
 
