@@ -1,127 +1,105 @@
 .section-ability {
-    height: 70vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    @include media('<=LGdesktop') {
-      height: 50vh;
-      width: 100%;
-  }
+    margin-bottom: 80px;
 
     &-wrapper {
-        height: 90vh;
         width: 100%;
         display: flex;
         flex-direction: column;
         text-align: center;
+        
+        .circle-bar {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
 
-        @include media('<=LGdesktop') {
-            height: 50vh;
-            width: 100%;
+          .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: #17B978;
+          
+            @include media('<=tablet') {
+                height: 100px;
+                width: 100px;
+            }
+            @include media('<=phone') {
+                height: 200px;
+                width: 200px;
+            }
+      
+            &::before {
+              content: '';
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 150px;
+              height: 150px;
+              border-radius: 50%;
+              background-color:#111E43;
+              z-index: 1;
+            
+            
+              @include media('<=tablet') {
+                height: 70px;
+                width: 70px;
+              }
+              @include media('<=phone') {
+                  height: 150px;
+                  width: 150px;
+              }
+            }
+      
+            &::after {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 200px;
+              height: 200px;
+              border-radius: 50%;
+              background-color:#E2F3F5;
+              clip-path: polygon(0 0, 50% 0, 50% 50%, 0 50%);
+            
+            
+              @include media('<=tablet') {
+                height: 100px;
+                width: 100px;
+              }
+              @include media('<=phone') {
+                height: 200px;
+                width: 200px;
+              }
+            }
+            h5 {
+              color: white;
+              font-size: 18px;
+              z-index: 2;
+            }            
+          }
         }
-    &-title {
-        font-size: 40px;
-        font-family: $arial;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-.circle-bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding: 7em;
-
-  @include media('<=phone') {
-    display: flex;
-    flex-direction: column;
-    height: 200%;
-    width: 80%;
-    justify-content: flex-start;
-    align-items: center;
-    padding-right: 40px;
-
-  }
-}
-.circle-bar > .icon{
-display: flex;
-justify-content: center;
-align-items: center;
-border-radius: 50%;
-position: relative;
-width: 200px;
-height: 200px;
-background-color: #17B978;
-
-
-
-
-@include media('<=tablet') {
-  height: 100px;
-  width: 100px;
-  }
-  @include media('<=phone') {
-    height: 200px;
-    width: 200px;
-    }
-}
-.icon::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background-color:#111E43;
-  z-index: 1;
-
-
-  @include media('<=tablet') {
-    height: 70px;
-    width: 70px;
-}
-@include media('<=phone') {
-  height: 150px;
-  width: 150px;
-  }
-}
-h5 {
-color: white;
-font-size: 18px;
-z-index: 2;
-}
-    .icon::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      background-color:#E2F3F5;
-
-
-      @include media('<=tablet') {
-        height: 100px;
-        width: 100px;
-      }
-      @include media('<=phone') {
-        height: 200px;
-        width: 200px;
+        &-title {
+            font-size: 40px;
+            font-family: $arial;
+            margin-bottom: 40px;
         }
     }
-.icon::after {
-          content: '';
-          clip-path: polygon(0 0, 50% 0, 50% 50%, 0 50%);
-    }
-  }
+
+
+}
+
+
+
   .section-ability-wrapper {
     @include media('<=phone') {
       display: flex;
@@ -165,22 +143,5 @@ z-index: 2;
           align-items: center;
           margin-top: 60px;
       }
-      // @include media('<=tablet') {
-      //   position: absolute;
-      //   top: 95%;
-      // }
     } 
-}
-}
-.section-ability-wrapper {
-  @include media('<=tablet') {
-  height: 50vh;
-  width: 100%;
-  }
-}
-.section-ability {
-  @include media('<=tablet') {
-  height: 50vh;
-  width: 100%;
-  }
 }
